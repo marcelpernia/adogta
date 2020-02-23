@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Odibee+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="assets/js/slick/slick.css">
+	<link rel="stylesheet" href="assets/js/slick/slick-theme.css">
+	<script src="assets/js/slick/slick.min.js"></script>
+	<style>
+		.modal {
+			padding: 0 !important;
+			max-width: 560px !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="pet_detail">
+		<div class="gallery-container">
+			<ul class="gallery">
+				<li><img src="assets/img/dogs/1_a.jpg" alt=""></li>
+				<li><img src="assets/img/dogs/1_b.jpg" alt=""></li>
+				<li><img src="assets/img/dogs/1_c.jpg" alt=""></li>
+			</ul>
+			<script>
+				$(document).ready(function(){
+					$('.gallery').slick({
+					  infinite: false,
+					  slidesToShow: 1,
+					  slidesToScroll: 1,
+					  arrows: true,
+					  dots: true,
+					  prevArrow: '<i class="fas fa-chevron-left arrow-left"></i>',
+					  nextArrow: '<i class="fas fa-chevron-right arrow-right"></i>'
+					});
+				});
+			</script>
+		</div>
+		<div class="pet_detail__content">
+			<div class="name"><span>Vecky</span></div>
+			<div class="gender">Hembra</div>
+			<div class="description">
+				<p>Vecky es una perrita que fue encontrada en un basurero.  Vivía entre basura y apenas tenía fuerzas para comer a causa de todas las enfermedades que padecía. Pero la situación de Vicky estaba por cambiar. Fue entonces cuando nuestra fundación recibió una llamada sobre el caso de esta linda perrita, y gracias a la colaboración de varias personas, Vicky pudo ser rescatada. Desde entonces recibe toda la atención y cariño que se merece, y espera ser adoptada para compartir toda su felicidad. </p>
+			</div>
+
+			<table class="meta">
+				<tr>
+					<th>Temperamento</th>
+					<th>Edad</th>
+					<th>Tipo de pelo</th>
+					<th>Tamaño</th>
+				</tr>
+				<tr>
+					<td>Tranquilo</td>
+					<td>3 año(s)</td>
+					<td>Corto</td>
+					<td>Mediano</td>
+				</tr>
+			</table>
+			
+			<div class="text-c">
+				<a href="" class="btn">Iniciar proceso de adopción <i class="fas fa-arrow-right"></i></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
