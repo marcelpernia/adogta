@@ -652,6 +652,15 @@ html {
 }
 
 @media (max-width: 680px) {
+	.header__logo {
+		width: 150px;
+	}
+	.header {
+		padding: 0px 7px;
+	}
+	.header .wrap {
+		height: 50px;
+	}
 	.heading {
 		padding-bottom: 20px;
 	}
@@ -725,6 +734,9 @@ html {
 }
 
 @media (max-width: 480px) {
+	.btn {
+		font-size: 12px;
+	}
 	.footer__nav li {
 		display: block;
 		margin-left: 0 !important;
