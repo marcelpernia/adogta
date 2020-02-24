@@ -694,7 +694,7 @@ html {
 	}
 	.header__nav {
     position: fixed;
-    top: 100px;
+    top: 50px;
     right: 0;
     background: #fff;
 		padding: 20px;
